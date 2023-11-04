@@ -6,18 +6,14 @@
 
 This repository contains **starter code** for Personal Blog website created using NextJs. <br />
 
-For Demo and Final Code checkout following links👇: <br />
-[Nextjs Personal Blog Website Demo](https://create-blog-with-nextjs.vercel.app/) <br />
+Project Link 👇: <br />
+[Nextjs Personal Blog Website](https://create-blog-with-nextjs.vercel.app/) <br />
 
-Final Code👇: <br />
-➡ Link 1💚: [Nextjs Personal Blog Website Final Code](https://github.com/codebucks27/Nextjs-tailwindcss-blog-template) <br />
-➡ Link 2💚(If you want to support): [Nextjs Personal Blog Website Final Code](https://codebucks.gumroad.com/l/ypzlu) <br />
 
-If you want to learn how to create it please follow below tutorial👇: <br />
+Tutorial link👇: <br />
 https://youtu.be/1QGLHOaRLwM <br />
 [![YouTube Video Views](https://img.shields.io/youtube/views/1QGLHOaRLwM?style=social)](https://youtu.be/1QGLHOaRLwM)<br />
 
-### ⭐DO NOT FORGET TO STAR THIS REPO⭐
 
 ### Images of The Portfolio Website:
 
@@ -40,7 +36,7 @@ For more Images please check the [project images](https://github.com/codebucks27
 - Fonts from https://fonts.google.com/ <br />
 - Icons from https://iconify.design/ <br />
 
-### All the images used in the blogs:
+<!-- ### All the images used in the blogs:
 - Photo by <a href="https://unsplash.com/@kmuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Carlos Muza</a> on <a href="https://unsplash.com/photos/hpjSkU2UYSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Photo by <a href="https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marvin Meyer</a> on <a href="https://unsplash.com/photos/SYTO3xs06fU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Photo by <a href="https://unsplash.com/@pinjasaur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paul Esch-Laurent</a> on <a href="https://unsplash.com/photos/oZMUrWFHOB4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -51,7 +47,7 @@ For more Images please check the [project images](https://github.com/codebucks27
 - Photo by <a href="https://unsplash.com/@cdx2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">C D-X</a> on <a href="https://unsplash.com/photos/PDX_a_82obo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">charlesdeluvio</a> on <a href="https://unsplash.com/photos/cZr2sgaxy3Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 - Photo by <a href="https://unsplash.com/@emilep?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emile Perron</a> on <a href="https://unsplash.com/photos/xrVDYZRGdw4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- Photo by <a href="https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Synkevych</a> on <a href="https://unsplash.com/photos/vXInUOv1n84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@synkevych?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roman Synkevych</a> on <a href="https://unsplash.com/photos/vXInUOv1n84?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

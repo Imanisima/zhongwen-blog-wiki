@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 
 import { Roboto } from 'next/font/google';
 import { Noto_Sans_TC } from 'next/font/google';
+import { cx } from '@/utils';
 
 const aileron = localFont({
   src: [
@@ -42,7 +43,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${aileron.variable} ${notosans.variable} ${roboto.variable} font-roboto bg-light dark:bg-dark`}>{children}</body>
+      <body 
+      className={
+        cx(
+          aileron.variable,
+          notosans.variable,
+          roboto.variable,
+          "font-roboto bg-light dark:bg-dark"
+        )
+      }>{children}</body>
     </html>
   )
 }

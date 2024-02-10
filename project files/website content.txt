@@ -1,7 +1,7 @@
 About:
 
-Dream Big, Work Hard, Achieve More!
-This Mantra Drives My Work As A Passionate Freelancer. I Blend Innovative Technology With Timeless Design For Captivating Digital Experiences. Inspired By Nature And Literature, I'm A Perpetual Learner Embracing Challenges. With Each Project, I Aim To Leave A Lasting Impact—One Pixel At A Time.
+Decode, Explore, Elevate
+This Mantra Drives My Studies As A Fervent Language Enthusiast. Immerse yourself in a unique blend of Chinese and tech, where we unravel the beauty of the chinese language pixel by pixel, leaving you inspired and empowered in your linguistic adventure.
 
 Have a project in mind? Reach out to me 📞 from here and let's make it happen.
 
@@ -10,20 +10,29 @@ ________________________________________________________________________________
 Footer:
 
 Interesting Stories | Updates | Guides
-Subscribe to learn about new technology and updates. Join over 5000+ members community to stay up to date with latest news.
-© 2023 CodeBucks. All rights reserved.
-Made with ❤ by CodeBucks
+Subscribe to learn about chinese study tips and updates. // Join over 5000+ members community to stay up to date with latest news.
+© 2024 NodeTeas. All rights reserved.
+Made with ❤ by NodeTeas
 
 _____________________________________________________________________________________
 
 const insights = [
-  "20+ Projects Completed",
-  "3+ Years of Freelancing",
-  "99% Client Satisfaction",
-  "20K+ Subscribers",
-  "Authored In-Depth Course on Educative",
-  "Contributed as a Technical Course Reviewer 📝",
-  "Recipient of the Hackernoon Noonies Award 🏆",
+  "3+ years of chinese learning",
+  "7+ years Software Engineering",
+  "10+ years of studying languages",
+  //"99% Client Satisfaction",
+  //"20K+ Subscribers",
+];
+
+_____________________________________________________________________________________
+
+const LanguageList = [
+  "Taiwanese Mandarin",
+  "Traditional Chinese",
+  "Simplified Chinese",
+  "German",
+  "Spanish",
+  "English"
 ];
 
 _____________________________________________________________________________________
@@ -34,7 +43,8 @@ const SkillList = [
   "figma",
   "javaScript",
   "web design",
-  "Gatsby.js",
+  "blender 3D",
+  "react.js",
   "strapi",
   "firebase",
   "generative AI",

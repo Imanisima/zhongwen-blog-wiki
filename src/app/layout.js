@@ -5,6 +5,8 @@ import { Roboto } from 'next/font/google';
 import { Noto_Sans_TC } from 'next/font/google';
 import { cx } from '@/utils';
 
+// Notes: https://www.youtube.com/watch?v=1QGLHOaRLwM
+
 const aileron = localFont({
   src: [
     {

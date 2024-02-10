@@ -3,9 +3,7 @@ import localFont from 'next/font/local';
 
 import { Roboto } from 'next/font/google';
 import { Noto_Sans_TC } from 'next/font/google';
-import { cx } from '@/utils';
-
-// Notes: https://www.youtube.com/watch?v=1QGLHOaRLwM
+import { cx } from '../utils'
 
 const aileron = localFont({
   src: [
@@ -38,7 +36,7 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'yourdailychinese | Chinese learning journey blog',
+  title: 'Your Daily Chinese',
   description: 'Sharing tips and stories behind my chinese learning journey!',
 }
 
@@ -51,7 +49,7 @@ export default function RootLayout({ children }) {
           aileron.variable,
           notosans.variable,
           roboto.variable,
-          "font-roboto bg-light dark:bg-dark"
+          "font-roboto bg-light dark:bg-dark h-screen"
         )
       }>{children}</body>
     </html>

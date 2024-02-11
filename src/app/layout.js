@@ -5,6 +5,8 @@ import { Roboto } from 'next/font/google';
 import { Noto_Sans_TC } from 'next/font/google';
 import { cx } from '../utils'
 
+import { Toaster } from "react-hot-toast"
+
 const aileron = localFont({
   src: [
     {
@@ -51,7 +53,9 @@ export default function RootLayout({ children }) {
           roboto.variable,
           "font-roboto bg-light dark:bg-dark h-screen"
         )
-      }>{children}</body>
+      }>
+        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
+        {children}</body>
     </html>
   )
 }

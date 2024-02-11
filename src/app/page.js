@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ComingSoon from './components/ComingSoon';
 
+import { TextInput, Textarea, Button } from "@mantine/core";
+
 export default function Home() {
   return (
     <div>

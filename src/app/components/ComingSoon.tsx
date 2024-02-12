@@ -19,7 +19,7 @@ export default function ComingSoon() {
 
             <div className="place-self-center leading-8 lg:leading-[2.5rem] text-center max-w-3xl px-2 mx-2 lg:px-5 my-5 border border-fuchsia-700 rounded-xl animate-pulse">
               <p className="text-white/80 ">
-                Hello~ I'm still building this site! Read on to discover the purpose
+                Hello~ I'm still working on this site! Read on to learn the purpose
                 of this blog.{" "}
                 <span className="h-7 w-7" role="img" aria-label="point-down">
                   👇🏽
@@ -31,17 +31,23 @@ export default function ComingSoon() {
               <h1 className="text-2xl font-ai mb-4 text-gradient px-1 py-10 hover:cursor-pointer scale-120 translate-x-4 skew-y-3">
                 Not your typical chinese language blog...
               </h1>
-              <h2 className="text-xl text-white/90 mb-4 font-ai">
+              {/* <h2 className="text-xl text-white/90 mb-4 font-ai">
                 {" "}
                 I am not a native Chinese speaker.{" "}
-              </h2>
+              </h2> */}
               <p className="text-white/80">
-                I decided to create this blog to share tips and tricks I've
-                learned and document my progress. These notes are all from my{" "}
+                Although I've studied many languages in the past, I could never seem to give up on Chinese. Something about it is so captivating. From the tones and characters, to the culture and music... The truth is at this point I just want to talk with the owner at my favorite noodle shop and play Mahjong. <span className="h-7 w-7" role="img" aria-label="don't judge me">🤷🏽‍♀️</span>. So, I decided to create this blog. Not only to share any tips and tricks I've
+                picked up so far, but to also boost my motivation for continuing to study. These notes are all from a{" "}
                 <span className="text-pink-300 underline underline-offset-4 decoration-wavy decoration-sky-500 hover:text-sky-500 hover:decoration-fuchsia-500 transition ease-in-out delay-150 hover:cursor-pointer">
                   personal language journal
                 </span>{" "}
-                since startinng my journey 3 years ago. This means there will be a
+                since I began this journey 3 years ago. 
+              </p>
+
+              <br />
+                
+              <p className="text-white/80">
+                This means there will be a
                 strong emphasis on  <span className="text-pink-300 underline underline-offset-4 decoration-wavy decoration-sky-500 hover:text-sky-500 hover:decoration-fuchsia-500 transition ease-in-out delay-150 hover:cursor-pointer">Taiwanese Mandarin</span> (i.e. Traditional Chinese
                 characters, bopomofo), with Simplified Chinese as secondary.{" "}
                 <br />
@@ -49,9 +55,10 @@ export default function ComingSoon() {
                 <span className="text-pink-300 underline underline-offset-4 decoration-wavy decoration-sky-500 hover:text-sky-500 hover:decoration-fuchsia-500 transition ease-in-out delay-150 hover:cursor-pointer">
                   coding projects
                 </span>{" "}
-                with a concentration on language learning for those moments when
-                inspiration just hits and I want to write about it.
+                for those moments when
+                inspiration just hits and I want to write about it. So, this blog will be a blend between chinese language learning and tech.
               </p>
+
               <p className="text-white/80 py-10">
                 If this sounds remotely interesting to you, feel free to click
                 the like button and sign up to get notified when the

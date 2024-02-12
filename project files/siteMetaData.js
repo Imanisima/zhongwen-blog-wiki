@@ -1,11 +1,13 @@
-// please update required information
 const siteMetadata = {
     title: 'Your Daily Chinese',
+    titleTemplate: '%s | Your Daily Chinese',
     author: '啊猊 Mani',
     headerTitle: 'Your Daily Chinese',
-    description: 'Coming Soon - Dive into the world of Chinese language learning with a programming twist to elevate your language skills, one pixel at a time. Connect with a vibrant community of passionate language enthusiasts, explore a distinctive approach to mastering Chinese, and empower your linguistic journey through our blog.',
+    description: "Explore the beauty of Chinese language and culture through my language learning journey. Immerse yourself in the captivating tones, characters, and rich traditions of Taiwanese Mandarin, with a focus on Traditional Chinese characters and bopomofo. Join me as I share insights, tips, and tricks accumulated over 3 years of dedicated study. Dive into the fusion of Chinese language learning and tech, where you'll find engaging SWE coding projects that materialize when inspiration strikes. Embark on this unique blend of language, culture, and technology, and let's journey together.",
     language: 'en-us',
+    keywords: 'chinese learning, language learning, Taiwanese Mandarin, Bopomofo, Tech and Language Integration, web development',
     theme: 'system', // system, dark or light
+    type: 'website',
     siteUrl: 'https://www.yourdailychinese.com', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder

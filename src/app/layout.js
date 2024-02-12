@@ -39,7 +39,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'Your Daily Chinese',
-  description: 'Dive into the world of Chinese language learning with a tech-savvy twist to elevate your language skills, one pixel at a time. Connect with a vibrant community of passionate language enthusiasts, explore a distinctive approach to mastering Chinese, and empower your linguistic journey through our blog.',
+  description: "Dive into the fusion of Chinese language learning and tech, where you'll find engaging SWE coding projects that materialize when inspiration strikes. Embark on this unique blend of language, culture, and technology, and let's journey together.",
 }
 
 export default function RootLayout({ children }) {

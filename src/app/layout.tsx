@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+      <link rel="icon" type="image/x-icon" href="../../../public/favicon.ico" />
           <meta name="theme-color" content="#121212"/>
           <meta name="robots" content="index,follow"/>
           

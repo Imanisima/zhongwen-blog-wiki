@@ -23,6 +23,7 @@
     ],
     "strictNullChecks": true
   },
+  "typeRoots": ["./src/app", "./app"],
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",

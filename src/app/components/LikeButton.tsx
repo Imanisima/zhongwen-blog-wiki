@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import CountUp from "react-countup";
 
 const LikeButton = () => {
   const [likes, setLikes] = useState<number>(0);
@@ -67,7 +68,10 @@ const LikeButton = () => {
       >
         <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C14.09 3.81 15.76 3 17.5 3 20.58 3 23 5.42 23 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
       </svg>
-      <span>{likes}</span>
+      <span>
+        <CountUp start={0} end={likes} duration={1} />
+      </span>
+      {/* <span>{likes}</span> */}
     </button>
   );
 };

@@ -74,11 +74,11 @@ const EmailSubscriptionForm = () => {
 
       {/* form */}
       <motion.form
-        variants={fadeIn("left", 0.3)}
+        variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView={"show"}
         className="border rounded-2xl py-10 px-10 w-full items-start"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.4 }}
         onSubmit={handleSubmit}
       >
 

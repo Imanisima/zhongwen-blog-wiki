@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const data = req.body;
     const { likes } = data;
 
-    const response = await notion.pages.update({
+    const response:any = await notion.pages.update({
       page_id: `${process.env.NOTION_LIKES_PAGE_ID}`,
       properties: {
         Name: {

@@ -2,8 +2,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LikeButton from "./LikeButton";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/variants";
+
+import LikeButton from "./LikeButton";
 import floating_computer from "../../../public/images/floating_computer.gif";
 import EmailSubscriptionForm from "./EmailSubscriptionForm";
 
@@ -35,18 +38,28 @@ export default function ComingSoon() {
                 {" "}
                 I am not a native Chinese speaker.{" "}
               </h2> */}
-              <p className="text-white/80">
+              <motion.p
+              variants={fadeIn("right", 0.1)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.2 }}
+               className="text-white/80">
                 Although I've studied many languages in the past, I could never seem to give up on Chinese. Something about it is so captivating. From the tones and characters, to the culture and music... The truth is at this point I just want to talk with the owner at my favorite noodle shop and play Mahjong. <span className="h-7 w-7" role="img" aria-label="don't judge me">🤷🏽‍♀️</span>. So, I decided to create this blog. Not only to share any tips and tricks I've
                 picked up so far, but to also boost my motivation for continuing to study. These notes are all from a{" "}
                 <span className="text-pink-300 underline underline-offset-4 decoration-wavy decoration-sky-500 hover:text-sky-500 hover:decoration-fuchsia-500 transition ease-in-out delay-150 hover:cursor-pointer">
                   personal language journal
                 </span>{" "}
                 since I began this journey 3 years ago. 
-              </p>
+              </motion.p>
 
               <br />
                 
-              <p className="text-white/80">
+              <motion.p
+              variants={fadeIn("left", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
+               className="text-white/80">
                 This means there will be a
                 strong emphasis on  <span className="text-pink-300 underline underline-offset-4 decoration-wavy decoration-sky-500 hover:text-sky-500 hover:decoration-fuchsia-500 transition ease-in-out delay-150 hover:cursor-pointer">Taiwanese Mandarin</span> (i.e. Traditional Chinese
                 characters, bopomofo), with Simplified Chinese as secondary.{" "}
@@ -57,16 +70,29 @@ export default function ComingSoon() {
                 </span>{" "}
                 for those moments when
                 inspiration just hits and I want to write about it. So, this blog will be a blend between chinese language learning and tech.
-              </p>
+              </motion.p>
 
-              <p className="text-white/80 py-10">
+              <motion.p
+              variants={fadeIn("right", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.4 }}
+               className="text-white/80 py-10">
                 If this sounds remotely interesting to you, feel free to click
                 the like button and sign up to get notified when the
                 site goes live! <br /> <span className="font-cn">一会见哦～</span>
-              </p>
-              <h3 className="font-cn">阿猊 &#183; Imani</h3>
-              <Image src={floating_computer} alt="floating computer with tea" />
-              <EmailSubscriptionForm />
+              </motion.p>
+
+              <motion.div
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.5 }}
+              >
+                <h3 className="font-cn">阿猊 &#183; Imani</h3>
+                <Image src={floating_computer} alt="floating computer with tea" />
+                <EmailSubscriptionForm />
+              </motion.div>
             </div>
           </div>
       </div>

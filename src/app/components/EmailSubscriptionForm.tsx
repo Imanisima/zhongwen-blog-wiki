@@ -5,7 +5,6 @@ import { toast } from "react-hot-toast";
 
 import { useState } from "react";
 
-import fetcher from "../../utils/fetcher";
 import { fadeIn } from "../../utils/variants";
 
 const EmailSubscriptionForm = () => {
@@ -49,7 +48,7 @@ const EmailSubscriptionForm = () => {
 
         const body = JSON.stringify(entry);
 
-          const response = await fetch("/api/route", {
+          const response = await fetch("/api/subscription", {
           method: "POST",
           headers: {
             'Content-Type': 'application/json',

@@ -1,29 +1,65 @@
-'use client'
-
-import React, { useState } from 'react';
+"use client";
+import React, { useState, useEffect } from "react";
 
 const LikeButton = () => {
   const [likes, setLikes] = useState<number>(0);
   const [isLiked, setIsLiked] = useState<boolean>(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+  useEffect(() => {
+    // Fetch the initial likes value from the database
+    fetch("/api/getLikes")
+      .then((response) => response.json())
+      .then((data) => setLikes(data.likes))
+      .catch((error) => console.error("Error fetching likes:", error));
+  }, []);
 
   const handleLikeClick = () => {
-    setLikes((prevLikes) => prevLikes + 1);
-    setIsLiked(true);
+    if (typeof window !== "undefined") {
+      const isLikedInSession =
+        window?.sessionStorage.getItem("isLiked") === "true";
 
-    // Add any additional logic or send a request to your backend to handle the like
+      if (isButtonDisabled) {
+        return; // Don't perform the action if the button is already disabled
+      }
+
+      // Check if the user has not yet clicked the like button
+      if (!isLikedInSession) {
+        setLikes((prevLikes) => prevLikes + 1);
+        setIsLiked(true);
+
+        // Mark that the user has liked during this session and disable the button
+        window.sessionStorage.setItem("isLiked", "true");
+        setIsButtonDisabled(true);
+
+        fetch("/api/updateLikes", {
+          method: "PATCH",
+          body: JSON.stringify({ likes: likes + 1 }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => setLikes(data.likes))
+          .catch((error) => console.error("Error updating likes:", error));
+      }
+    }
   };
 
   return (
     <button
       className={`flex items-center space-x-2 px-4 py-2 rounded-xl hover:outline hover:outline-offset-8 hover:outline-none lg:hover:outline-white transition duration-700 ease-in-out ${
-        isLiked ? 'bg-white/90 text-black animate-pulse' : 'bg-[#121212] outline outline-white/80 text-white animate-pulse' // not selected
+        isLiked
+          ? "bg-white/90 text-fuchsia-500"
+          : "bg-[#121212] outline outline-white/80 text-white animate-pulse" // not clicked
       }`}
+      disabled={isButtonDisabled}
       onClick={handleLikeClick}
     >
       <svg
         className="w-6 h-6"
-        fill={isLiked ? 'currentColor' : 'none'}
-        stroke={isLiked ? 'none' : 'currentColor'}
+        fill={isLiked ? "currentColor" : "none"}
+        stroke={isLiked ? "none" : "currentColor"}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"

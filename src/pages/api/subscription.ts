@@ -65,7 +65,7 @@ const postHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     };
 
     /** Authenticate your request */
-    const notion = new Client({ auth: `${process.env.NOTION_KEY}` });
+    const notion = new Client({ auth: `${process.env.NOTION_CONTACT_KEY}` });
     const response = await notion.pages.create(entry);
 
     return res.status(200).json(response);
